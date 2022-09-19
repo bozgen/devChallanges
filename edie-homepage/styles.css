@@ -1,0 +1,108 @@
+:root{
+    
+    --gray1: #333333;
+    --gray2: #4F4F4F;
+    --gray3: #828282;
+    --gray4: #BDBDBD;
+    --gray6: #F2F2F2;
+    --accent: #2D9CDB;
+    --accent-g: #27AE60;
+    --accent-r: #EB5757;
+    --accent-y: #F2C94C;
+    --bg-footer: #100E1D;
+}
+.body{
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 2rem;
+}
+.header-title{
+    font-family: 'Heebo', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    margin: 0;
+    margin-top: -.5rem;
+    margin-left: 2rem;
+}
+.header-link{
+    text-decoration: none;
+    color: var(--gray1);
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin: 1rem;
+}
+.header-link-home{
+    margin-left: auto;
+}
+
+
+.top{
+    padding-left: 7rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 6rem;
+}
+.question{
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--accent);
+}
+.big-title{
+    font-weight: 500;
+    font-size: 3rem;
+    max-width: 35rem;
+    color: var(--gray1);
+}
+.hero-img{
+    margin-left: -4rem;
+    border-radius: 20px;
+}
+
+.story{
+    margin-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 7rem;
+}
+.story > .big-title{
+    max-width: 25rem;
+}
+.story-p{
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--gray2);
+    max-width: 20rem;
+}
+
+.contact-question{
+    font-weight: 500;
+    font-size: .9rem;
+    color: var(--gray3);
+}
+.inp-email{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: .75rem;
+    border: none;
+    background-color: var(--gray6);
+    color: var(--gray4);
+}
+.inp-email:focus{
+    outline: none;
+}
+.join-btn{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: .75rem;
+    background: var(--accent);
+    color: var(--gray6);
+    cursor: pointer;
+}
+
