@@ -1,7 +1,7 @@
 .project-card{
     background: white;
-    width: 24%;
-    padding: 3rem;
+    width: 26%;
+    padding: 2rem;
     border-radius: 1rem;
     margin: 0;
     margin-bottom: 10rem;
@@ -11,6 +11,7 @@
 }
 .project-tags{
     display: flex;
+    margin-top: 1rem;
 }
 .project-tag{
     margin-right: 1rem;
@@ -22,13 +23,13 @@
     font-weight: 500;
     font-size: 1.5rem;
     color: var(--gray1);
-    margin-top: 1.4rem;
+    margin-top: 1.75rem;
 }
 .project-explanation{
     font-weight: 500;
     font-size: 1rem;
     color: var(--gray3);
-    margin-top: 1.1rem;
+    margin-top: 1.35rem;
 }
 .project-buttons{
     margin-top: 2rem;

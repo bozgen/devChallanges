@@ -1,5 +1,6 @@
 .projects-controller{
     grid-column: 3 / 11;
+    grid-row: 5;
     background: white;
     padding: 2rem;
     border-radius: 1.5rem;

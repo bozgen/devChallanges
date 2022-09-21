@@ -7,14 +7,15 @@ import Hobbies from './components/Hobbies';
 import Experience from './components/Experiences';
 import ProjectsController from './components/ProjectsController';
 import Projects from './components/Projects';
+import Header from './components/Header';
 
 function App() {
   
   const mockFrontend = [
-    {name: "HTML", progress: 90},
-    {name: "CSS", progress: 70},
-    {name: "Javascript", progress: 85},
-    {name: "React", progress: 50},
+    {name: "HTML", progress: 100},
+    {name: "CSS", progress: 83},
+    {name: "Javascript", progress: 79},
+    {name: "React", progress: 87},
     {name: "React Native", progress: 19},
     {name: "Redux", progress: 15},
   ]
@@ -38,6 +39,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <Introduction />
       <Skills
         title="FRONT END"

@@ -1,0 +1,22 @@
+.page-title{
+    position: absolute;
+    left: 2rem;
+}
+.header-nav{
+    position: absolute;
+    top: 1rem;
+    right: .5rem;
+}
+.header-link-list{
+    display: flex;
+    list-style: none;
+}
+.header-link-list > li{
+    margin-right: 1.5rem;
+    font-size: 1.1rem;
+}
+li > a {
+    text-decoration: none;
+    color: var(--gray1);
+    font-weight: 600;
+}

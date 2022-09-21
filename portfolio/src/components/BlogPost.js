@@ -4,7 +4,7 @@ import logo from "../logo.svg";
 export default function BlogPost(){
 
     return (
-        <section className="blogpost">
+        <section id="blog" className="blogpost">
             <h3 className="blog-indicator">Blog</h3>
             <div className="title-image-wrapper">
                 <h1 className="blog-title">How to organize your CSS</h1>

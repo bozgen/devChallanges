@@ -4,7 +4,7 @@ import logo from "../logo.svg";
 export default function Hobbies(){
 
     return(
-        <section className="hobbies">
+        <section id="hobbies" className="hobbies">
             <h1 className="hobbies-title">Hobbies</h1>
             
             <div className="hobby hobby-top">

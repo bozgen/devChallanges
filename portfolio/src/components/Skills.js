@@ -21,7 +21,7 @@ export default function Skills({title, length, skills, gridStart, gridEnd}){
 
 
     return(
-        <section className="skills" style={skillsStyles}>
+        <section id="skills" className="skills" style={skillsStyles}>
             <div className="skills-card">
                 <h1 className="skills-title">{title}</h1>
                 {skillElements}

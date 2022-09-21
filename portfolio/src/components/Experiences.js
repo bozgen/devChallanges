@@ -4,7 +4,7 @@ import logo from "../logo.svg";
 export default function Experience(){
 
     return(
-        <section className="experience">
+        <section id="experiences" className="experience">
             <h1 className="experiences-title">Experiences</h1>
             
             <div className="experience-single">

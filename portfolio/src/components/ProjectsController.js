@@ -20,7 +20,7 @@ export default function ProjectsController({projects}){
     }
 
     return(
-        <section className="projects-controller">
+        <section id="projects" className="projects-controller">
             <h1 className="projects-title">Projects<span className="project-count"> ({projects.length})</span></h1>
 
             <div className="control-butttons">
