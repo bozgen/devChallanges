@@ -1,6 +1,6 @@
 .skills{
     margin-right: 2rem;
-    grid-column: 2 / span 1;
+    grid-column: 3 / span 1;
 }
 .skills-card{
     background: white;

@@ -2,7 +2,11 @@ import './App.css';
 import React from "react";
 import Introduction from './components/Introduction';
 import Skills from './components/Skills';
-import { setSelectionRange } from '@testing-library/user-event/dist/utils';
+import BlogPost from './components/BlogPost';
+import Hobbies from './components/Hobbies';
+import Experience from './components/Experiences';
+import ProjectsController from './components/ProjectsController';
+import Projects from './components/Projects';
 
 function App() {
   
@@ -22,21 +26,31 @@ function App() {
   
   const [frontendSkill, setFrontendSkill] = React.useState([]);
   const [designSkill, setDesignSkill] = React.useState([]);
-  
-  
+
+  const [projects, setProjects] = React.useState([]);
+    
   React.useEffect(()=>{
     setFrontendSkill(mockFrontend);
     setDesignSkill(mockDesign);
   },[])
+
+
 
   return (
     <div className="App">
       <Introduction />
       <Skills
         title="FRONT END"
-        skills ={frontendSkill}
-        length= {25}
+        skills= {frontendSkill}
+        length= {110}
+        gridStart={3}
+        gridEnd={"span 3"}
         />
+      <BlogPost />
+      <Hobbies />
+      <Experience />
+      <ProjectsController projects={projects}/>
+      <Projects />
       
     </div>
   );

@@ -1,5 +1,5 @@
 .intro{
-    grid-column: 2/6;
+    grid-column: 3 / span 8;
     margin-top: 5rem;
 }
 .intro-card{

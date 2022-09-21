@@ -1,12 +1,12 @@
 import "./styles/SkillSingle.css";
 
-export default function SkillSingle({skill, length = 20, progress}){
+export default function SkillSingle({skill, length = 50, progress}){
 
     const progressStyle = {
         width: `${progress}%`
     }
     const skillStyle = {
-        width: `${length}rem`
+        width: `${length}%`
     }
 
 

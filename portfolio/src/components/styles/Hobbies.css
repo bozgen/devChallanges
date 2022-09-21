@@ -1,0 +1,32 @@
+.hobbies{
+    grid-column: 3 / span 3;
+    grid-row: 3;
+    background: white;
+    border-radius: 1.5rem;
+    margin-right: 2rem;
+    margin-top: -12.5em;
+
+}
+.hobbies-title{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--gray2);
+    padding: 3rem 2rem 1rem;
+    margin: 0;
+}
+.hobby{
+    padding: 1rem 2rem;
+}
+.hobby-img{
+    width: 50%;
+}
+.hobby-title{
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--gray1);
+}
+.hobby-explanation{
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--gray3);
+}
