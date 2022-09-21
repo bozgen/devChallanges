@@ -5,6 +5,13 @@ export default function Project({imageUrl, tags, title, explanation, demoUrl, co
 
     const tagElements = tags.map(tag => <span className="project-tag">#{tag}</span>)
 
+    const handleDemoClick = () => {
+        window.location.href = "https://bozgen.github.io/devChallenges/edie-homepage";
+    }
+    const handleCodeClick = () => {
+        window.location.href = "https://github.com/bozgen/devChallenges/";
+    }
+
     return(
         <div className="project-card">
             <img className="project-img" src={imageUrl || logo}/>
@@ -14,8 +21,8 @@ export default function Project({imageUrl, tags, title, explanation, demoUrl, co
             <h1 className="project-title">{title}</h1>
             <p className="project-explanation">{explanation}</p>
             <div className="project-buttons">
-                <button className="project-btn">Demo</button>
-                <button className="project-btn clear-btn">Code</button>
+                <button onClick={handleDemoClick} className="project-btn">Demo</button>
+                <button onClick={handleCodeClick} className="project-btn clear-btn">Code</button>
             </div>
         </div>
     )

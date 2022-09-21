@@ -8,6 +8,7 @@ import Experience from './components/Experiences';
 import ProjectsController from './components/ProjectsController';
 import Projects from './components/Projects';
 import Header from './components/Header';
+import projectsData from './data/projectsData';
 
 function App() {
   
@@ -33,6 +34,7 @@ function App() {
   React.useEffect(()=>{
     setFrontendSkill(mockFrontend);
     setDesignSkill(mockDesign);
+    setProjects(projectsData);
   },[])
 
 
