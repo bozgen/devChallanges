@@ -51,6 +51,8 @@ function App() {
       <Experience />
       <ProjectsController projects={projects}/>
       <Projects />
+
+      <h4 className="signature">created by <a className="signature-link" href="https://github.com/bozgen">bozgen</a> - devChallenges.io</h4>
       
     </div>
   );
