@@ -1,0 +1,21 @@
+.skill{
+    display: flex;
+    align-items: center;
+}
+.skill-name{
+    margin-right: auto;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.bar{
+    width: 200px;
+    background: var(--gray4);
+    border-radius: 10px;
+    margin-right: 2rem;
+}
+.progress-bar{
+    background: var(--accent);
+    width: 100px;
+    border-radius: 10px;
+    color: transparent;
+}

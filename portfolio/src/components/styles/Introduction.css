@@ -1,0 +1,55 @@
+.intro{
+    grid-column: 2/6;
+    margin-top: 5rem;
+}
+.intro-card{
+    background: white;
+    padding: 4rem 2rem;
+    border-radius: 1rem;
+
+    display: flex;
+}
+.profile-picture{
+    width: 25%;
+    padding: .5rem;
+    padding-right: 1rem;
+}
+.intro-info{
+    display: flex;
+    justify-content: space-between;
+}
+.intro-bio{
+    color: var(--gray3);
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 4rem;
+}
+.intro-info-name{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    margin: 0;
+    margin-top: 1rem;
+}
+.intro-info-job{
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--gray3);
+    margin: 0;
+    margin-top: .5rem;
+}
+.intro-icon{
+    width: 1.25rem;
+    margin: 0;
+    margin-right: 1rem;
+}
+.intro-info-contact{
+    font-weight: 500;
+    font-size: .75rem;
+    margin: 0;
+    color: var(--gray2);
+}
+.intro-info-contact-single{
+    display: flex;
+    align-items: center;
+}
