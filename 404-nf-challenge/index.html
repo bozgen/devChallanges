@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Devchallenges</title>
+    <style>
+      .body{
+        margin: 0;
+        background: #FFFFFF;
+      }
+      .header-logo{
+        font-family: 'Inconsolata';
+        font-weight: 700;
+        font-size: 24px;
+        margin-left: 80px;
+        margin-top: 40px;
+      }
+      .main-section{
+        font-family: 'Space Mono', monospace;
+        display: flex;
+      }
+      .left{
+        aspect-ratio: 1;
+        width: 40%;
+        margin: 4em;
+      }
+      .right{
+        margin:4em;
+      }
+      .title{
+        font-weight: 700;
+        font-size: 64px;
+        max-width: 600px;
+        color: #333333;
+      }
+      .explanation{
+        font-weight: 400;
+        font-size: 24px;
+        max-width: 400px;
+        color: #4F4F4F;
+      }
+      .homepage-btn{
+        padding: 2em;
+        border-radius: 0;
+        margin-top: 4em;
+        border: none;
+        background-color: #333333;
+        color: #FFFFFF;
+        font-family: 'Inconsolata', monospace;
+        font-weight: 700;
+        font-size: 14px;
+      }
+      .homepage-btn:hover{
+        background-color: #4F4F4F;
+      }
+      .homepage-btn:active{
+        background-color: #BDBDBD;
+      }
+      footer{
+        margin: 0;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 1rem;
+        color: #BDBDBD;
+        z-index: 0;
+      }
+      .bozgen{
+        color: #BDBDBD;
+        cursor: pointer;
+      }
+      strong{
+        text-decoration: underline;
+      }
+      @media screen and (max-width: 1200px) {
+        .main-section{
+          flex-direction: column;
+        }
+        .header-logo{
+          font-family: 'Inconsolata', monospace;
+          margin-left: 1.5rem;
+          margin-top: 1.25rem;
+          font-size: 1.5rem;
+        }
+        .left{
+          width: 100%;
+          margin: 0;
+          margin-top: 1rem;
+        }
+        .right{
+          margin: 0;
+        }
+        .title{
+          font-size: 2.75rem;
+          font-weight: 700;
+          margin: 1.5rem;
+        }
+        .explanation{
+          font-size: 1.1rem;
+          margin: 1.5rem;
+        }
+        .homepage-btn{
+          margin-bottom: 1.5rem;
+          margin-left: 1.5rem;
+        }
+        footer{
+          position: fixed;
+        }
+      }
+      @media screen and (max-width: 1200px) and (min-width: 600px) {
+        .left{
+          width: 70%;
+          margin: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h3 class="header-logo">404 NOT FOUND</h3>
+    <section class="main-section">
+      <img class="left" src="./Scarecrow.png" alt="A cartoony scarecrow with 3 hanging signs on its arms. Signs read 404.">
+      <div class="right">
+        <h1 class="title">I have bad news for you</h1>
+        <p class="explanation">The page you are looking for might be removed or is temporarily unavailable</p>
+        <button class="homepage-btn">BACK TO THE HOMEPAGE</button>
+      </div>
+    </section>
+    <footer>created by <a class="bozgen" href="https://github.com/bozgen">bozgen</a> - devChallenges.io</footer>
+  </body>
+  <script>
+    const gotoHomepage = () => {
+      window.location.href="https://devchallenges.io"
+    }
+    document.querySelector(".homepage-btn").addEventListener("click", gotoHomepage)
+  </script>
+</html>
