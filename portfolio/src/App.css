@@ -13,11 +13,12 @@
 
   
   background: var(--bg-light);
+  scroll-behavior: smooth;
 }
 .App {
   font-family: "Montserrat";
   
   display: grid;
   grid-template-columns: 10% 1fr 1fr 1fr 1fr 10%;
-  gap: 5rem;
+  gap: 3.5rem;
 }

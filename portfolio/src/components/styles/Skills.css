@@ -1,8 +1,14 @@
 .skills{
-    grid-column: 3 / 2;
+    margin-right: 2rem;
+    grid-column: 2 / span 1;
 }
 .skills-card{
     background: white;
     padding: 1rem 2rem;
     border-radius: 1.5rem;
+}
+.skills-title{
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: var(--gray2);
 }

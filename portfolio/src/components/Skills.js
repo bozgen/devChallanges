@@ -1,11 +1,13 @@
 import "./styles/Skills.css";
 import SkillSingle from "./SkillSingle";
+import {nanoid} from "nanoid";
 
 export default function Skills({title, length, skills}){
 
     const skillElements = skills.map(skill => {
         return (
             <SkillSingle
+                key= {nanoid()}
                 skill={skill.name}
                 length={length}
                 progress={skill.progress}

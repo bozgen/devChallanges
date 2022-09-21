@@ -2,30 +2,42 @@ import './App.css';
 import React from "react";
 import Introduction from './components/Introduction';
 import Skills from './components/Skills';
+import { setSelectionRange } from '@testing-library/user-event/dist/utils';
 
 function App() {
   
-  const mockSkills = [
+  const mockFrontend = [
     {name: "HTML", progress: 90},
     {name: "CSS", progress: 70},
     {name: "Javascript", progress: 85},
-    {name: "React", progress: 50}
+    {name: "React", progress: 50},
+    {name: "React Native", progress: 19},
+    {name: "Redux", progress: 15},
+  ]
+  const mockDesign = [
+    {name: "Photoshop", progress: 13},
+    {name: "Figma", progress: 87}
   ]
 
-  const [skills, setSkills] = React.useState([]);
+  
+  const [frontendSkill, setFrontendSkill] = React.useState([]);
+  const [designSkill, setDesignSkill] = React.useState([]);
+  
   
   React.useEffect(()=>{
-    setSkills(mockSkills);
+    setFrontendSkill(mockFrontend);
+    setDesignSkill(mockDesign);
   },[])
 
   return (
     <div className="App">
       <Introduction />
       <Skills
-        title="Front-end"
-        skills ={skills}
+        title="FRONT END"
+        skills ={frontendSkill}
         length= {25}
         />
+      
     </div>
   );
 }
