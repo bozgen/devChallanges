@@ -9,31 +9,18 @@ import ProjectsController from './components/ProjectsController';
 import Projects from './components/Projects';
 import Header from './components/Header';
 import projectsData from './data/projectsData';
+import { frontendData, designData } from "./data/skillsData";
 
 function App() {
-  
-  const mockFrontend = [
-    {name: "HTML", progress: 100},
-    {name: "CSS", progress: 83},
-    {name: "Javascript", progress: 79},
-    {name: "React", progress: 87},
-    {name: "React Native", progress: 19},
-    {name: "Redux", progress: 15},
-  ]
-  const mockDesign = [
-    {name: "Photoshop", progress: 13},
-    {name: "Figma", progress: 87}
-  ]
 
-  
   const [frontendSkill, setFrontendSkill] = React.useState([]);
   const [designSkill, setDesignSkill] = React.useState([]);
 
   const [projects, setProjects] = React.useState([]);
     
   React.useEffect(()=>{
-    setFrontendSkill(mockFrontend);
-    setDesignSkill(mockDesign);
+    setFrontendSkill(frontendData);
+    setDesignSkill(designData);
     setProjects(projectsData);
   },[])
 
