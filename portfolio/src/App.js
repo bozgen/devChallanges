@@ -17,6 +17,7 @@ function App() {
   const [designSkill, setDesignSkill] = React.useState([]);
 
   const [projects, setProjects] = React.useState([]);
+  const [filters, setFilters] = React.useState([]);
     
   React.useEffect(()=>{
     setFrontendSkill(frontendData);
@@ -40,8 +41,12 @@ function App() {
       <BlogPost />
       <Hobbies />
       <Experience />
-      <ProjectsController projects={projects}/>
-      <Projects />
+      <ProjectsController 
+          projects={projects}
+          filters={filters}
+          setFilters={setFilters}
+          />
+      <Projects filters={filters}/>
 
       <h4 className="signature">created by <a className="signature-link" href="https://github.com/bozgen">bozgen</a> - devChallenges.io</h4>
       

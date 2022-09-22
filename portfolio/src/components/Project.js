@@ -1,9 +1,10 @@
 import "./styles/Project.css";
 import logo from "../logo.svg";
+import { nanoid } from "nanoid";
 
 export default function Project({imageUrl, tags, title, explanation, demoUrl, codeUrl}){
 
-    const tagElements = tags.map(tag => <span className="project-tag">#{tag}</span>)
+    const tagElements = tags.map(tag => <span key={nanoid()} className="project-tag">#{tag}</span>)
 
     const handleDemoClick = () => {
         window.location.href = "https://bozgen.github.io/devChallenges/edie-homepage";

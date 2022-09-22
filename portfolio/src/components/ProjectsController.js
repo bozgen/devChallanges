@@ -1,9 +1,8 @@
 import React from "react";
 import "./styles/ProjectsController.css";
 
-export default function ProjectsController({projects}){
+export default function ProjectsController({projects, setFilters}){
 
-    const [filters, setFilters] = React.useState([]);
 
     const handleFilterClick = (e) => {
         if(e.target.classList.contains("selected")){
@@ -26,6 +25,7 @@ export default function ProjectsController({projects}){
             <div className="control-butttons">
                 <button onClick={(e)=>handleFilterClick(e)} className="control-button">no framework</button>
                 <button onClick={(e)=>handleFilterClick(e)} className="control-button">react</button>
+                <button onClick={(e)=>handleFilterClick(e)} className="control-button">responsive</button>
             </div>
         </section>
     )

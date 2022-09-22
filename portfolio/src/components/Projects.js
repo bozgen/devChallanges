@@ -1,11 +1,17 @@
+import React from "react";
+//components
 import Project from "./Project";
 import projectsData from "../data/projectsData";
+//style
 import "./styles/Projects.css";
+//third-party
 import { nanoid } from "nanoid";
 
-export default function Projects(){
+export default function Projects({filters}){
     
-    const projectElements = projectsData.map(project => {
+    const [filteredProjects, setFilteredProjects] = React.useState(projectsData);
+    
+    const projectElements = filteredProjects.map(project => {
         return(
             <Project 
             key={nanoid()}
@@ -19,6 +25,23 @@ export default function Projects(){
         )
     })
     
+    React.useEffect(()=>{
+        filterProjects();
+    },[filters]);
+    
+    const filterProjects = () => {
+        if(!filters[0]){
+            setFilteredProjects(projectsData);
+            return;
+        }
+
+        const filteredProjects = projectsData.filter(project => {
+            return project.tags.some(tag => {
+                return filters.some(filter => tag===filter)
+            })
+        })
+        setFilteredProjects(filteredProjects);
+    }
 
     return(
         <div className="projects">
