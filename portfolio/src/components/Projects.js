@@ -7,9 +7,9 @@ import "./styles/Projects.css";
 //third-party
 import { nanoid } from "nanoid";
 
-export default function Projects({filters}){
+export default function Projects({filters, filteredProjects, setFilteredProjects}){
     
-    const [filteredProjects, setFilteredProjects] = React.useState(projectsData);
+    
     
     const projectElements = filteredProjects.map(project => {
         return(

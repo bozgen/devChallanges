@@ -1,9 +1,18 @@
+.projects-top{
+    display: flex;
+    justify-content: space-between;
+}
 .projects-controller{
     grid-column: 3 / 11;
     grid-row: 5;
     background: white;
     padding: 2rem;
     border-radius: 1.5rem;
+    color: var(--gray1);
+}
+.displayed-projects{
+    color: var(--gray1);
+    margin-right: 3rem;
 }
 .control-buttons{
     display: flex;
@@ -25,4 +34,27 @@
     background: var(--accent);
     color: white;
     border-color: var(--accent);
+}
+.projects-controller-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.control-buttons-right{
+    display: flex;
+}
+.arrow-img{
+    height: 2rem;
+    margin-top: .2rem;
+}
+.arrow{
+    padding: 0 .6rem;
+    margin-right: .75rem;
+    border-color: var(--gray3);
+}
+.disabled{
+    border-color: var(--gray4);
+    background-color: var(--gray6);
+}
+.arrow:active{
+    background: var(--gray6);
 }
