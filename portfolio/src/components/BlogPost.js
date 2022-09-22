@@ -15,7 +15,7 @@ export default function BlogPost(){
             Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.
             </p>
 
-            <a className="blog-link" href="#">dev.to</a>
+            <a className="blog-link" href="#home">dev.to</a>
         </section>
     )
 }

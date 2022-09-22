@@ -15,7 +15,7 @@ export default function Project({imageUrl, tags, title, explanation, demoUrl, co
 
     return(
         <div className="project-card">
-            <img className="project-img" src={imageUrl || logo}/>
+            <img className="project-img" src={imageUrl || logo} alt=""/>
             <div className="project-tags">
                 {tagElements}
             </div>

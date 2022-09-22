@@ -9,19 +9,18 @@ import ProjectsController from './components/ProjectsController';
 import Projects from './components/Projects';
 import Header from './components/Header';
 import projectsData from './data/projectsData';
-import { frontendData, designData } from "./data/skillsData";
+import { frontendData } from "./data/skillsData";
 
 function App() {
 
   const [frontendSkill, setFrontendSkill] = React.useState([]);
-  const [designSkill, setDesignSkill] = React.useState([]);
 
   const [projects, setProjects] = React.useState([]);
   const [filters, setFilters] = React.useState([]);
+  const [filteredProjects, setFilteredProjects] = React.useState(projectsData);
     
   React.useEffect(()=>{
     setFrontendSkill(frontendData);
-    setDesignSkill(designData);
     setProjects(projectsData);
   },[])
 
@@ -45,8 +44,11 @@ function App() {
           projects={projects}
           filters={filters}
           setFilters={setFilters}
+          filteredProjects={filteredProjects}
           />
-      <Projects filters={filters}/>
+      <Projects filters={filters}
+      filteredProjects={filteredProjects}
+      setFilteredProjects={setFilteredProjects}/>
 
       <h4 className="signature">created by <a className="signature-link" href="https://github.com/bozgen">bozgen</a> - devChallenges.io</h4>
       
