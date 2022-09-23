@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://bozgen.github.io/devChallenges/portfolio">
+    <a href="https://bozgen.github.io/portfolio-demo">
       Demo
     </a>
     <span> | </span>
@@ -41,7 +41,7 @@
 
 In this project I created a portfolio website using React.
 
-You can see the demo [here](https://bozgen.github.io/devChallenges/portfolio)
+You can see the demo [here](https://bozgen.github.io/portfolio-demo)
 
 The challenging parts of this project were:
 
