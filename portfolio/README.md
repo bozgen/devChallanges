@@ -37,7 +37,7 @@
 
 ## Overview
 
-![screenshot]("./screenshot.PNG")
+![screenshot](./screenshot.PNG)
 
 In this project I created a portfolio website using React.
 
