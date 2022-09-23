@@ -11,7 +11,7 @@ import Introduction from './components/Introduction';
 import Skills from './components/Skills';
 import BlogPost from './components/BlogPost';
 import Hobbies from './components/Hobbies';
-import Experience from './components/Experiences';
+import Experiences from './components/Experiences';
 import ProjectsController from './components/ProjectsController';
 import Projects from './components/Projects';
 
@@ -48,7 +48,7 @@ function App() {
         />
       <BlogPost />
       <Hobbies />
-      <Experience />
+      <Experiences />
       <ProjectsController 
           projects={projects}
           filters={filters}
