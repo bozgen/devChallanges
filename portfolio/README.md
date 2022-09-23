@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">bozgen portfolio</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://bozgen.github.io/devChallenges/portfolio">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/bozgen/devChallenges/tree/main/portfolio">
       Solution
     </a>
     <span> | </span>
@@ -37,28 +37,51 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot]("./screenshot.PNG")
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+In this project I created a portfolio website using React.
 
-- Where can I see your demo?
+You can see the demo [here](https://bozgen.github.io/devChallenges/portfolio)
+
+The challenging parts of this project were:
+
+- Creating a filter feature from scratch for the projects section.
+- Displaying the projects page by page, 3 at a time.
+- Alignment (CSS Grid)
+
+
+The things that I have learned/improved while working with this project are:
+
+- (CSS) Alignment by CSS-grid
+- (React) Component lifecycles
+- (React) Memoizing the components to optimize performance
+- (React) Dealing with the es-lint dependency array warnings by using useCallback hook
 - What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+
+It was a really fun project to make and it only took about a 2 days to finish up.
+
+The fact that the design was already provided really helps focusing on the technical side of the project. Now, I surely feel a lot more confident about front-end development using React framework.
+
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
-
 - [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+
 
 ## Features
-
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
+Some of the major features this website has:
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/5ZnOYsSXM24JWnCsNFlt) was to build an application to complete the given user stories.
+- Navigate through the page using the header navigation bar.
+- Display skills, experiences and hobbies dynamically and categorized since the related components are reusable. e.g. Front-end skills , back-end skills, education experiences, work experience and so on.
+- Display blogs.
+- Display your projects and tag them so that the projects can be filtered.
+- Redirect to project codes or demos easily.
+
+
+
+This website was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/5ZnOYsSXM24JWnCsNFlt) was to build an application to complete the given user stories.
 
 ## How To Use
 
@@ -81,12 +104,10 @@ $ npm start
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example: -->
 
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
 - [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+- [React](https://reactjs.org/)
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- GitHub [@bozgen](https://github.com/bozgen)
+- Twitter [@_bozgen](https://twitter.com/bozgen)
