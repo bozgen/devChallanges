@@ -9,8 +9,6 @@ import "./styles/Projects.css";
 import { nanoid } from "nanoid";
 
 export default function Projects({filters, filteredProjects, setFilteredProjects, displayIndex, setDisplayIndex}){
-    
-    const displayCount = 3;
 
     const projectElements = filteredProjects.map(project => {
         return(
@@ -47,7 +45,7 @@ export default function Projects({filters, filteredProjects, setFilteredProjects
 
     return(
         <div className="projects">
-            {projectElements.slice(displayIndex,displayIndex+displayCount)}
+            {projectElements.slice(displayIndex,displayIndex+3)}
         </div>
     ) 
 }

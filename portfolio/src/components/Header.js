@@ -2,7 +2,6 @@ import "./styles/Header.css";
 
 export default function Header(){
 
-
     return(
         <header id="home" className="header">
             <h1 className="page-title">bozgen</h1>

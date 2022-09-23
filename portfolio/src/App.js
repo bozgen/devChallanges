@@ -26,7 +26,6 @@ function App() {
   const [filters,           setFilters          ] = useState([]);
   const [filteredProjects,  setFilteredProjects ] = useState(projectsData);
   const [displayIndex,      setDisplayIndex     ] = useState(0);
-
     
   React.useEffect(()=>{
     setFrontendSkill(frontendData);
@@ -55,13 +54,14 @@ function App() {
           setFilters={setFilters}
           filteredProjects={filteredProjects}
           displayIndex={displayIndex}
-          setDisplayIndex={setDisplayIndex}
+          setDisplayIndex={setDisplayIndex}          
           />
       <Projects filters={filters}
       filteredProjects={filteredProjects}
       setFilteredProjects={setFilteredProjects}
       displayIndex={displayIndex}
-      setDisplayIndex={setDisplayIndex}/>
+      setDisplayIndex={setDisplayIndex}
+      />
 
       <h4 className="signature">created by <a className="signature-link" href="https://github.com/bozgen">bozgen</a> - devChallenges.io</h4>
       

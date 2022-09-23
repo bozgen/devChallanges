@@ -1,5 +1,4 @@
 import "./styles/Experience.css";
-import logo from "../logo.svg";
 import Experience from "./Experience";
 
 export default function Experiences(){
@@ -20,7 +19,6 @@ export default function Experiences(){
                 dateEnd={"Feb 2017"}
                 position={"Full-stack developer"}
                 description={"Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie."}
-                logo={logo}
             />
         </section>
     )
