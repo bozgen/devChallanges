@@ -7,10 +7,10 @@ import "./styles/Projects.css";
 //third-party
 import { nanoid } from "nanoid";
 
-export default function Projects({filters, filteredProjects, setFilteredProjects}){
+export default function Projects({filters, filteredProjects, setFilteredProjects, displayIndex, setDisplayIndex}){
     
-    
-    
+    const displayCount = 3;
+
     const projectElements = filteredProjects.map(project => {
         return(
             <Project 
@@ -24,11 +24,7 @@ export default function Projects({filters, filteredProjects, setFilteredProjects
             />
         )
     })
-    
-    React.useEffect(()=>{
-        filterProjects();
-    },[filters]);
-    
+
     const filterProjects = () => {
         if(!filters[0]){
             setFilteredProjects(projectsData);
@@ -42,10 +38,15 @@ export default function Projects({filters, filteredProjects, setFilteredProjects
         })
         setFilteredProjects(filteredProjects);
     }
+    
+    React.useEffect(()=>{
+        filterProjects();
+        setDisplayIndex(0);
+    },[filters]);
 
     return(
         <div className="projects">
-            {projectElements}
+            {projectElements.slice(displayIndex,displayIndex+displayCount)}
         </div>
     ) 
 }
