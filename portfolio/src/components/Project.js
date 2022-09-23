@@ -4,13 +4,16 @@ import { nanoid } from "nanoid";
 
 export default function Project({imageUrl, tags, title, explanation, demoUrl, codeUrl}){
 
+    // render span elements for each tag this project has
     const tagElements = tags.map(tag => <span key={nanoid()} className="project-tag">#{tag}</span>)
 
-    const handleDemoClick = () => {
-        window.location.href = "https://bozgen.github.io/devChallenges/edie-homepage";
+    const handleDemoClick = (e) => {
+        if(!demoUrl) demoUrl = "https://bozgen.github.io/devChallenges/edie-homepage";
+        window.location.href = `${demoUrl}`;
     }
     const handleCodeClick = () => {
-        window.location.href = "https://github.com/bozgen/devChallenges/";
+        if(!codeUrl) codeUrl = "https://github.com/bozgen/devChallenges";
+        window.location.href = `${codeUrl}`;
     }
 
     return(
