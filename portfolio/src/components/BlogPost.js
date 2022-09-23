@@ -1,7 +1,8 @@
 import "./styles/BlogPost.css";
+import React from "react";
 import logo from "../logo.svg";
 
-export default function BlogPost(){
+const BlogPost = React.memo(() => {
 
     return (
         <section id="blog" className="blogpost">
@@ -18,4 +19,5 @@ export default function BlogPost(){
             <a className="blog-link" href="#home">dev.to</a>
         </section>
     )
-}
+})
+export default BlogPost;

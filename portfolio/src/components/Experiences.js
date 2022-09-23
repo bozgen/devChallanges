@@ -1,7 +1,8 @@
 import "./styles/Experience.css";
+import { memo } from "react";
 import Experience from "./Experience";
 
-export default function Experiences(){
+const Experiences = memo(() => {
 
     return(
         <section id="experiences" className="experience">
@@ -22,4 +23,5 @@ export default function Experiences(){
             />
         </section>
     )
-}
+})
+export default Experiences;

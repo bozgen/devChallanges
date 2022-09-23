@@ -1,13 +1,10 @@
-// STYLE
 import "./styles/ProjectsController.css";
-// REACT
 import React from "react";
-import { useCallback } from "react";
-// ICONS
+import { useCallback, memo } from "react";
 import arrowLeft from "../icons/arrow-left.svg";
 import arrowRight from "../icons/arrow-right.svg";
 
-export default function ProjectsController({ setFilters, filteredProjects, displayIndex, setDisplayIndex}){
+const ProjectsController = memo(({ setFilters, filteredProjects, displayIndex, setDisplayIndex}) => {
 
     const handleFilterClick = (e) => {
         if(e.target.classList.contains("selected")){
@@ -104,4 +101,5 @@ export default function ProjectsController({ setFilters, filteredProjects, displ
             </div>
         </section>
     )
-}
+});
+export default ProjectsController;

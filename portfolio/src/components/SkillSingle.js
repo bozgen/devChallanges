@@ -1,6 +1,7 @@
 import "./styles/SkillSingle.css";
+import { memo } from "react";
 
-export default function SkillSingle({skill, length = 50, progress}){
+const SkillSingle = memo(({skill, length = 50, progress}) => {
 
     const progressStyle = {
         width: `${progress}%`
@@ -18,4 +19,5 @@ export default function SkillSingle({skill, length = 50, progress}){
             </div>
         </div>
     )
-}
+});
+export default SkillSingle;

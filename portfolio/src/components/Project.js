@@ -1,8 +1,9 @@
 import "./styles/Project.css";
+import { memo } from "react";
 import logo from "../logo.svg";
 import { nanoid } from "nanoid";
 
-export default function Project({imageUrl, tags, title, explanation, demoUrl, codeUrl}){
+const Project = memo(({imageUrl, tags, title, explanation, demoUrl, codeUrl}) => {
 
     // render span elements for each tag this project has
     const tagElements = tags.map(tag => <span key={nanoid()} className="project-tag">#{tag}</span>)
@@ -30,4 +31,5 @@ export default function Project({imageUrl, tags, title, explanation, demoUrl, co
             </div>
         </div>
     )
-}
+})
+export default Project;

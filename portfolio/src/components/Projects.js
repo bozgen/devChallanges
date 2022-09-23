@@ -1,14 +1,11 @@
 import React from "react";
-import { useEffect, useCallback } from "react";
-//components
+import { useEffect, useCallback , memo } from "react";
 import Project from "./Project";
 import projectsData from "../data/projectsData";
-//style
 import "./styles/Projects.css";
-//third-party
 import { nanoid } from "nanoid";
 
-export default function Projects({filters, filteredProjects, setFilteredProjects, displayIndex, setDisplayIndex}){
+const Projects = memo(({filters, filteredProjects, setFilteredProjects, displayIndex, setDisplayIndex}) => {
 
     const projectElements = filteredProjects.map(project => {
         return(
@@ -48,4 +45,5 @@ export default function Projects({filters, filteredProjects, setFilteredProjects
             {projectElements.slice(displayIndex,displayIndex+3)}
         </div>
     ) 
-}
+});
+export default Projects;

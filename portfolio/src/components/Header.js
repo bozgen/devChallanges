@@ -1,6 +1,7 @@
 import "./styles/Header.css";
+import { memo } from "react";
 
-export default function Header(){
+const Header = memo(() => {
 
     return(
         <header id="home" className="header">
@@ -17,4 +18,5 @@ export default function Header(){
             </nav>
         </header>
     )
-}
+})
+export default Header;

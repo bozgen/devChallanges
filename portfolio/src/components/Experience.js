@@ -1,6 +1,6 @@
 import logo from "../logo.svg";
-
-export default function Experience({logoUrl, dateStart, dateEnd, position, description}){
+import { memo } from "react";
+const Experience = memo(({logoUrl, dateStart, dateEnd, position, description}) => {
 
     return(
         <div className="experience-single">
@@ -12,4 +12,5 @@ export default function Experience({logoUrl, dateStart, dateEnd, position, descr
             </div>
         </div>
     )
-}
+})
+export default Experience;

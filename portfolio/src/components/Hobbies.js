@@ -1,7 +1,8 @@
 import "./styles/Hobbies.css";
+import { memo } from "react";
 import Hobby from "./Hobby";
 
-export default function Hobbies(){
+const Hobbies = memo(() => {
 
     return(
         <section id="hobbies" className="hobbies">
@@ -15,4 +16,5 @@ export default function Hobbies(){
                 description={"Quisque feugiat malesuada molestie."}/>
         </section>
     )
-}
+})
+export default Hobbies;

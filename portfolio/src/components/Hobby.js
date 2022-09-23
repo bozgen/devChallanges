@@ -1,6 +1,7 @@
 import logo from "../logo.svg";
+import { memo } from "react";
 
-export default function Hobby({image, title, description}){
+const Hobby = memo(({image, title, description}) => {
 
     return (
         <div className="hobby hobby-top">
@@ -9,4 +10,5 @@ export default function Hobby({image, title, description}){
             <h3 className="hobby-explanation">{description}</h3>
         </div>
     )
-}
+})
+export default Hobby;

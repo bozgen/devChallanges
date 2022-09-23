@@ -1,9 +1,10 @@
 import "./styles/Introduction.css";
+import { memo } from "react";
 import logo from "../logo.svg";
 import email from "../icons/email.svg";
 import phone from "../icons/phone.svg";
 
-export default function Introduction(){
+const Introduction = memo(() => {
 
     return(
         <section className="intro">
@@ -29,4 +30,5 @@ export default function Introduction(){
             </div>
         </section>
     )
-}
+})
+export default Introduction;

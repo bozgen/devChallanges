@@ -1,8 +1,9 @@
 import "./styles/Skills.css";
+import { memo } from "react";
 import SkillSingle from "./SkillSingle";
 import {nanoid} from "nanoid";
 
-export default function Skills({title, length, skills, gridStart, gridEnd}){
+const Skills = memo(({title, length, skills, gridStart, gridEnd}) => {
 
     const skillElements = skills.map(skill => {
         return (
@@ -28,4 +29,5 @@ export default function Skills({title, length, skills, gridStart, gridEnd}){
             </div>
         </section>
     )
-}
+})
+export default Skills;
