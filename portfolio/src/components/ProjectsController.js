@@ -1,10 +1,13 @@
-import React from "react";
+// STYLE
 import "./styles/ProjectsController.css";
-//icons
+// REACT
+import React from "react";
+import { useCallback } from "react";
+// ICONS
 import arrowLeft from "../icons/arrow-left.svg";
 import arrowRight from "../icons/arrow-right.svg";
 
-export default function ProjectsController({ filters, setFilters, filteredProjects, displayIndex, setDisplayIndex}){
+export default function ProjectsController({ setFilters, filteredProjects, displayIndex, setDisplayIndex}){
 
     const handleFilterClick = (e) => {
         if(e.target.classList.contains("selected")){
@@ -18,7 +21,6 @@ export default function ProjectsController({ filters, setFilters, filteredProjec
             e.target.classList.add("selected");
             setFilters(prevFilters => [...prevFilters,e.target.textContent]);
         }
-        
     }
 
     const decrementDisplayIndex = (e) => {
@@ -34,32 +36,32 @@ export default function ProjectsController({ filters, setFilters, filteredProjec
             }
         }
     }
+
     const incrementDisplayIndex = (e) => {
         const leftBtn = document.querySelector("#projects-left-btn");
         const rightBtn = document.querySelector("#projects-right-btn");
-        if(displayIndex + 3 >= filteredProjects.length){
-            return;
-        }
-        if(rightBtn.classList.contains("disabled")){
-            rightBtn.classList.remove("disabled");
-        }
+
+        if(displayIndex + 3 >= filteredProjects.length){ return; }
+
+        if(rightBtn.classList.contains("disabled"))
+            { rightBtn.classList.remove("disabled") }
+
         setDisplayIndex(prevIndex => prevIndex +3);
         
-        if(displayIndex + 6 >= filteredProjects.length && !rightBtn.classList.contains("disabled")){
-            rightBtn.classList.add("disabled");
-        }
-        if(leftBtn.classList.contains("disabled")){
-            leftBtn.classList.remove("disabled");
-        }
+
+        if(displayIndex + 6 >= filteredProjects.length && !rightBtn.classList.contains("disabled"))
+        { rightBtn.classList.add("disabled") }
+
+        if(leftBtn.classList.contains("disabled"))
+            { leftBtn.classList.remove("disabled") }
     }
 
-    React.useEffect(()=>{
+    const updateButtonStyles = useCallback(() => {
         const leftBtn = document.querySelector("#projects-left-btn");
         const rightBtn = document.querySelector("#projects-right-btn");
 
         //update left button
-        if (displayIndex === 0 && !leftBtn.classList.contains("disabled")){leftBtn.classList.add("disabled")}
-        else if (displayIndex>0 && leftBtn.classList.contains("disabled")){leftBtn.classList.remove("disabled")}
+        if (!leftBtn.classList.contains("disabled")){leftBtn.classList.add("disabled")}
 
         //update right button
         if(filteredProjects.length <=3 && !rightBtn.classList.contains("disabled"))
@@ -68,6 +70,10 @@ export default function ProjectsController({ filters, setFilters, filteredProjec
             { rightBtn.classList.remove("disabled") }
     
     },[filteredProjects])
+
+    React.useEffect(()=>{
+        updateButtonStyles();
+    },[filteredProjects, updateButtonStyles])
 
     return(
         <section id="projects" className="projects-controller">

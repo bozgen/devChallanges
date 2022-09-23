@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect, useCallback } from "react";
 //components
 import Project from "./Project";
 import projectsData from "../data/projectsData";
@@ -25,7 +26,7 @@ export default function Projects({filters, filteredProjects, setFilteredProjects
         )
     })
 
-    const filterProjects = () => {
+    const filterProjects = useCallback(() => {
         if(!filters[0]){
             setFilteredProjects(projectsData);
             return;
@@ -37,12 +38,12 @@ export default function Projects({filters, filteredProjects, setFilteredProjects
             })
         })
         setFilteredProjects(filteredProjects);
-    }
+    },[filters, setFilteredProjects])
     
-    React.useEffect(()=>{
+    useEffect(()=>{
         filterProjects();
         setDisplayIndex(0);
-    },[filters]);
+    },[filters, filterProjects, setDisplayIndex]);
 
     return(
         <div className="projects">

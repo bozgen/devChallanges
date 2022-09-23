@@ -1,5 +1,12 @@
+// STYLE
 import './App.css';
+
+// REACT
 import React from "react";
+import { useState } from "react";
+
+// COMPONENTS
+import Header from './components/Header';
 import Introduction from './components/Introduction';
 import Skills from './components/Skills';
 import BlogPost from './components/BlogPost';
@@ -7,19 +14,18 @@ import Hobbies from './components/Hobbies';
 import Experience from './components/Experiences';
 import ProjectsController from './components/ProjectsController';
 import Projects from './components/Projects';
-import Header from './components/Header';
+
+// MOCK DATA
 import projectsData from './data/projectsData';
 import { frontendData } from "./data/skillsData";
 
 function App() {
 
-  const [frontendSkill, setFrontendSkill] = React.useState([]);
-
-  const [projects, setProjects] = React.useState([]);
-  const [filters, setFilters] = React.useState([]);
-  const [filteredProjects, setFilteredProjects] = React.useState(projectsData);
-
-  const [displayIndex, setDisplayIndex] = React.useState(0);
+  const [frontendSkill,     setFrontendSkill    ] = useState([]);
+  const [projects,          setProjects         ] = useState([]);
+  const [filters,           setFilters          ] = useState([]);
+  const [filteredProjects,  setFilteredProjects ] = useState(projectsData);
+  const [displayIndex,      setDisplayIndex     ] = useState(0);
 
     
   React.useEffect(()=>{
