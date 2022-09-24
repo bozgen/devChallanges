@@ -1,4 +1,4 @@
-# devChallanges
+# devChallenges
 
 ## In this repo, there are solutions for the challenges provided by devChallenges.io
 
