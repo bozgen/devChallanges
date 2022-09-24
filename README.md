@@ -4,12 +4,10 @@
 
 These challanges are mainly responsive web development challenges.
 
-### See the solutions:
+### Challenges:
 
-- [404 not found page](https://github.com/bozgen/devChallenges/tree/main/404-nf-challenge)
-- [Edie homepage](https://github.com/bozgen/devChallenges/tree/main/edie-homepage)
+- Portfolio Webpage [Code](https://github.com/bozgen/devChallenges/tree/main/portfolio) | [Demo](https://bozgen.github.io/devChallenges/portfolio)
+- Edie Homepage [Code](https://github.com/bozgen/devChallenges/tree/main/edie-homepage) | [Demo](https://bozgen.github.io/devChallenges/edie-homepage)
+- 404 not found page [Code](https://github.com/bozgen/devChallenges/tree/main/404-nf-challenge) | [Demo](https://bozgen.github.io/devChallenges/404-nf-challenge)
 
-### See the demos:
 
-- [404 not found page](https://bozgen.github.io/devChallenges/404-nf-challenge)
-- [Edie homepage](https://bozgen.github.io/devChallenges/edie-homepage)
