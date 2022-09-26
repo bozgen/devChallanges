@@ -25,6 +25,18 @@
 }
 
 :root{
+  /* variables */
+  --bg-card: white;
+  --text-dark: rgba(96, 102, 208, 0.8);
+  --text-darker: #2F527B;
+  --text-light: white;
+  --text-footer: #F2F2F2;
+  --correct: #60BF88;
+  --wrong: #EA8282;
+  --accent: #F9A826;
+  
+  
+  
   height: 100%;
   background-image: url("./background.png");
   background-size: 100%;
