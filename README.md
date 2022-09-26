@@ -1,15 +1,22 @@
-# devChallanges
+# devChallenges
 
 ## In this repo, there are solutions for the challenges provided by devChallenges.io
 
-These challanges are mainly responsive web development challenges.
+These challanges are mainly about responsive web development.
 
-### See the solutions:
+#### Challenges:
 
-- [404 not found page](https://github.com/bozgen/devChallenges/tree/main/404-nf-challenge)
-- [Edie homepage](https://github.com/bozgen/devChallenges/tree/main/edie-homepage)
+- ## Portfolio Webpage [Code](https://github.com/bozgen/devChallenges/tree/main/portfolio) | [Demo](https://bozgen.github.io/devChallenges/portfolio)
 
-### See the demos:
+    A fully functional portfolio website created using React.
+    
+    
+- ## Edie Homepage [Code](https://github.com/bozgen/devChallenges/tree/main/edie-homepage) | [Demo](https://bozgen.github.io/devChallenges/edie-homepage)
 
-- [404 not found page](https://bozgen.github.io/devChallenges/404-nf-challenge)
-- [Edie homepage](https://bozgen.github.io/devChallenges/edie-homepage)
+    A static homepage with in-page navigation. ( HTML / CSS / Javascript )
+    
+    
+- ## 404 not found page [Code](https://github.com/bozgen/devChallenges/tree/main/404-nf-challenge) | [Demo](https://bozgen.github.io/devChallenges/404-nf-challenge)
+    An extremely basic 404 error page. ( HTML / CSS )
+
+
