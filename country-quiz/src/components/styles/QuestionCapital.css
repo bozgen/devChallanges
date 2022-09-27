@@ -30,7 +30,6 @@
 
     padding: .75rem;
     width: 100%;
-    min-width: 75px;
     
     border-radius: .6rem;
     border: 2px solid var(--text-dark);
@@ -38,6 +37,7 @@
     margin-bottom: 1em;
     
     cursor: pointer;
+    text-align: left;
 }
 .question-btn:active{
     border-color: var(--accent);
@@ -46,9 +46,13 @@
 }
 .correct{
     background: var(--correct);
+    border-color: var(--correct);
+    color: var(--text-lighter);
 }
 .wrong{
     background: var(--wrong);
+    border-color: var(--wrong);
+    color: var(--text-lighter);
 }
 .next-btn{
     color: var(--text-dark);

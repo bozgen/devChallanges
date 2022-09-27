@@ -1,36 +1,63 @@
 import "./styles/QuestionCapital.css";
-import { useEffect, useState } from "react";
+import { useState, memo, useEffect } from "react";
 import { nanoid } from "nanoid";
 import adventure from "../images/adventure.svg";
 
-const QuestionCapital = ({capital, answer, c1, c2, c3, setScore}) => {
+const QuestionCapital = memo(({capital, answer, c1, c2, c3, setScore, results, setResults, nextQuestion, currentQuestion}) => {
 
-    const shuffledChoices = [answer, c1, c2, c3].sort((a,b) => 0.5 - Math.random());
-    const [answered, setAnswered] = useState(false);
+    const [choices,setChoices] = useState([answer, c1, c2, c3].sort((a,b) => 0.5 - Math.random()));
+    const [wrong, setWrong] = useState({is: false, id: ""});
 
     const handleClick = (e) => {
-        setAnswered(true);
-
-        if (e.target.name === answer){
+        if(wrong.is) return;
+        
+        if (e.target.id === answer.split(" ")[0]){
             e.target.classList.add("correct");
             setScore(prevScore => prevScore + 1);
+            setWrong({is: true})
         }else {
-            e.target.classList.add("wrong");
+            setWrong({is: true, id: e.target.id.split(" ")[0]});
         }
+    }
+    
+    // styles after answering
+    useEffect(()=>{
+        if (wrong.id === "") return;
+        wrong.id && document.querySelector(`#${wrong.id.split(" ")[0]}`).classList.add("wrong");
+        document.querySelector(`#${answer.split(" ")[0]}`).classList.add("correct");
+    },[wrong])
+
+    useEffect(() => {
+        if(!results) return;
+        nextQuestion();
+        setWrong({is: false, id:""});
+    },[results])
+
+    useEffect(()=>{
+        setChoices([answer, c1, c2, c3].sort((a,b) => 0.5 - Math.random()));
+    },[currentQuestion])
+
+    const gotoNextQuestion = () => {
+        setWrong({is: false, id:""});
+        nextQuestion();
     }
 
     const handleNext = () => {
-        // implement this
+        if (wrong.is && !wrong.id){
+            gotoNextQuestion();
+        }else{
+            setResults(true);
+        }
     }
 
-    const choiceButtons = shuffledChoices.map((choice) => {
+    const choiceButtons = choices.map((choice, i) => {
         return (
         <button 
         key={nanoid()}
         className="question-btn"
-        name={choice}
+        id={choice.split(" ")[0]}
         onClick={handleClick}>
-            {choice}
+            {String.fromCharCode(65 + i)}&emsp;&emsp;&emsp;{choice}
         </button>)
     })
 
@@ -41,9 +68,9 @@ const QuestionCapital = ({capital, answer, c1, c2, c3, setScore}) => {
                 <h2 className="question-q">{capital} is the capital of</h2>
                 {choiceButtons}
             </div>
-            <button onClick={handleNext}
-            className="next-btn">Next</button>
+            {wrong.is && <button onClick={handleNext}
+            className="next-btn">Next</button>}
         </div>
     )
-}
+})
 export default QuestionCapital;

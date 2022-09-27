@@ -1,0 +1,40 @@
+.results-card{
+    background: var(--text-lighter);
+    border-radius: 1.5em;
+    padding: 2.5em 6em;
+    text-align: center;
+}
+.results-image{
+    width: 100%;
+}
+.results-title{
+    font-weight: 700;
+    font-size: 3em;
+    color: var(--results-text);
+    margin-top: .5em;
+    margin-bottom: 0;
+}
+.results-info{
+    font-weight: 400;
+    font-size: 1.1em;
+    color: var(--results-text);
+    margin-top: 0em;
+}
+.results-score{
+    font-weight: 700;
+    font-size: 2.2em;
+    color: var(--results-accent);
+}
+.results-btn{
+    border: 2px solid var(--results-text);
+    border-radius: .5em;
+    padding: .75em 2.5em;
+    margin-top: 2em;
+
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.1em;
+
+    background: transparent;
+    cursor: pointer;
+}
