@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!-- Please update value in the {}  -->
 
 <h1 align="center">Country Quiz</h1>
@@ -114,5 +113,3 @@ $ npm start
 - GitHub [@your-username](https://github.com/bozgen)
 - Twitter [@your-twitter](https://twitter.com/_bozgen)
 =======
-
->>>>>>> 80b113910a9885ac1e3e74dc47908769e208be57
