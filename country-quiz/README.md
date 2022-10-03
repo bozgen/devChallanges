@@ -110,6 +110,5 @@ $ npm start
 
 ## Contact
 
-- GitHub [@your-username](https://github.com/bozgen)
-- Twitter [@your-twitter](https://twitter.com/_bozgen)
-=======
+- GitHub [bozgen](https://github.com/bozgen)
+- Twitter [_bozgen](https://twitter.com/_bozgen)
