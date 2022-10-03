@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- Please update value in the {}  -->
 
 <h1 align="center">bozgen portfolio</h1>
@@ -111,3 +112,6 @@ $ npm start
 
 - GitHub [@bozgen](https://github.com/bozgen)
 - Twitter [@_bozgen](https://twitter.com/bozgen)
+=======
+portfolio demo
+>>>>>>> 80b113910a9885ac1e3e74dc47908769e208be57
