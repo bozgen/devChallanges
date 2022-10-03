@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">Country Quiz</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://bozgen.github.io/devChallenges/country-quiz">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/bozgen/devChallenges/tree/main/country-quiz">
       Solution
     </a>
     <span> | </span>
@@ -33,32 +33,55 @@
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 
+
+
 <!-- OVERVIEW -->
+<br>
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+### The quiz currently has two types of questions:
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+<br>
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+- #### Flag Questions
+
+  ![screenshot](./src/images/screenshot-flag.png)
+  <br><br>
+- #### Capital Questions
+
+  ![screenshot](./src/images/screenshot-capital.png)
+
+
+### See the demo [here](https://bozgen.github.io/devChallenges/country-quiz).
+
+<br>
+
+  This was a really fun project to build. The design is really cool and the API is pretty straight-forward to work with.
+  
+  I used the [REST Countries API](https://restcountries.com/) to build this project. 
+
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
-
 - [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
 
 ## Features
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
+Stories:
+
+- Answer different types of questions about countries all over the world.
+- See if your answer is correct or not.
+- Move on to the next question if you are right.
+- See your results if your answer is wrong.
+- Try again
+
+
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/Bu3G2irnaXmfwQ8sZkw8) was to build an application to complete the given user stories.
+
 
 ## How To Use
 
@@ -81,12 +104,11 @@ $ npm start
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example: -->
 
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
 - [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+- [React](https://reactjs.org/)
+- [REST Countries API](https://restcountries.com)
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- GitHub [@your-username](https://github.com/bozgen)
+- Twitter [@your-twitter](https://twitter.com/_bozgen)
