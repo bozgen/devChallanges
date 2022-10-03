@@ -10,6 +10,16 @@
     top: -25%;
     margin: 0;
 }
+.question-flag{
+    position: relative;
+    width: 30%;
+    left: -40%;
+    top: 0;
+    margin-bottom: 15%;
+    padding: 2em;
+    background: var(--bg-flag);
+    border-radius: 1em;
+}
 .question-content{
     position: relative;
     left: 0;

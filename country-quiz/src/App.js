@@ -1,10 +1,12 @@
 import './App.css';
 import { useEffect, useState } from "react";
 import fetchCountries from "./services/fetchCountries";
-import QuestionCapital from './components/QuestionCapital';
+import Question from './components/Question';
 import Results from './components/Results';
 
 function App() {
+  
+  const numberOfQuestionTypes = 2;
   
   const [countries, setCountries] = useState([]); 
   const [currentQuestion, setCurrentQuestion] = useState(null);
@@ -32,13 +34,14 @@ function App() {
     const c3 = countries[choices[3]].name.common;
 
 
-    return {capital, answer, c1, c2, c3};
+    return {type:"capital", capital, answer, c1, c2, c3};
   }
 
   const makeQuestionCapitalElement = (question) => {
     
     return (
-      <QuestionCapital
+      <Question
+      type="capital"
       capital={question.capital}
       answer={question.answer}
       c1={question.c1}
@@ -53,8 +56,51 @@ function App() {
     )
   }
 
+  const makeQuestionFlag = () => {
+    let choices = new Set();
+    while(choices.size < 4){
+      choices.add(Math.floor(Math.random() * countries.length));
+    }
+    choices = [...choices];
+    const flag = countries[choices[0]].flags.svg;
+    const answer = countries[choices[0]].name.common;
+    const c1 = countries[choices[1]].name.common;
+    const c2 = countries[choices[2]].name.common;
+    const c3 = countries[choices[3]].name.common;
+
+    return {type:"flag", flag, answer, c1, c2, c3};
+  }
+
+  const makeQuestionFlagElement = (question) => {
+    return (
+      <Question
+      type="flag"
+      flag={question.flag}
+      answer={question.answer}
+      c1={question.c1}
+      c2={question.c2}
+      c3={question.c3}
+      setScore={setScore}
+      results={results}
+      setResults={setResults}
+      nextQuestion={nextQuestion}
+      currentQuestion={currentQuestion}
+      />
+    )
+  }
+
   const nextQuestion = () => {
-    setCurrentQuestion(makeQuestionCapital());
+    const type = Math.floor(Math.random() * numberOfQuestionTypes);
+    switch(type){
+      case 0: // capital question
+        setCurrentQuestion(makeQuestionCapital());
+        break;
+      case 1: // flag question
+        setCurrentQuestion(makeQuestionFlag());
+        break;
+      default:
+        break;
+    }
   }
 
   useEffect(() => {
@@ -66,13 +112,20 @@ function App() {
   useEffect(()=>{
     if(countries.length === 0) return;
     
-    setCurrentQuestion(makeQuestionCapital());
+    nextQuestion();
   },[countries.length])
+
+  let currentQuestionFunction;
+  if(currentQuestion){
+    currentQuestionFunction = currentQuestion.type === "capital" 
+    ? makeQuestionCapitalElement
+    : makeQuestionFlagElement
+  }
 
   return (
     <div className="App">
       <h1 className="App-title">COUNTRY QUIZ</h1>
-      {!results && currentQuestion && makeQuestionCapitalElement(currentQuestion)}
+      {!results && currentQuestion && currentQuestionFunction(currentQuestion)}
       {results && <Results
                   score={score}
                   setScore={setScore}

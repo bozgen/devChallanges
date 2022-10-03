@@ -27,6 +27,7 @@
 :root{
   /* variables */
   --bg-card: white;
+  --bg-flag: #F5F5F5;
   --text-dark: rgba(96, 102, 208, 0.8);
   --text-darker: #2F527B;
   --text-lighter: white;

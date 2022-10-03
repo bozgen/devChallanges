@@ -1,9 +1,9 @@
-import "./styles/QuestionCapital.css";
+import "./styles/Question.css";
 import { useState, memo, useEffect } from "react";
 import { nanoid } from "nanoid";
 import adventure from "../images/adventure.svg";
 
-const QuestionCapital = memo(({capital, answer, c1, c2, c3, setScore, results, setResults, nextQuestion, currentQuestion}) => {
+const Question = memo(({type, capital, flag, answer, c1, c2, c3, setScore, results, setResults, nextQuestion, currentQuestion}) => {
 
     const [choices,setChoices] = useState([answer, c1, c2, c3].sort((a,b) => 0.5 - Math.random()));
     const [wrong, setWrong] = useState({is: false, id: ""});
@@ -61,16 +61,38 @@ const QuestionCapital = memo(({capital, answer, c1, c2, c3, setScore, results, s
         </button>)
     })
 
-    return(
-        <div className="question">
-            <img className="question-image" src={adventure} alt="" />
-            <div className="question-content">
-                <h2 className="question-q">{capital} is the capital of</h2>
-                {choiceButtons}
+    if(type==="capital"){
+        // CAPITAL QUESTION
+        return(
+            <div className="question">
+                <img className="question-image" src={adventure} alt="" />
+                <div className="question-content">
+                    <h2 className="question-q">{capital} is the capital of</h2>
+                    {choiceButtons}
+                </div>
+                {wrong.is && <button onClick={handleNext}
+                className="next-btn">Next</button>}
             </div>
-            {wrong.is && <button onClick={handleNext}
-            className="next-btn">Next</button>}
-        </div>
-    )
+        )
+    }
+    else if(type==="flag"){
+        // FLAG QUESTION
+        return(
+            <div className="question">
+                <img className="question-image" src={adventure} alt="" />
+                <img className="question-flag" src={flag} alt=""/>
+                <div className="question-content">
+                    <h2 className="question-q">Which country does this flag belong to?</h2>
+                    {choiceButtons}
+                </div>
+                {wrong.is && <button onClick={handleNext}
+                className="next-btn">Next</button>}
+            </div>
+        )
+    }
+    else{
+        return <div></div>
+    }
+
 })
-export default QuestionCapital;
+export default Question;
