@@ -1,7 +1,0 @@
-.projects{
-    grid-column: 3/ span 8;
-    grid-row: 6;
-    display: flex;
-    justify-content: space-evenly;
-    border-radius: 1.5rem;
-}
