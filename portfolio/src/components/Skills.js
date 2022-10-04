@@ -16,13 +16,9 @@ const Skills = memo(({title, length, skills, gridStart, gridEnd}) => {
         )
     })
 
-    const skillsStyles = {
-        gridColumn: `${gridStart} / ${gridEnd}`
-    }
-
 
     return(
-        <section id="skills" className="skills" style={skillsStyles}>
+        <section id="skills" className="skills">
             <div className="skills-card">
                 <h1 className="skills-title">{title}</h1>
                 {skillElements}

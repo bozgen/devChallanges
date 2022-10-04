@@ -42,8 +42,6 @@ function App() {
         title="FRONT END"
         skills= {frontendSkill}
         length= {110}
-        gridStart={3}
-        gridEnd={"span 3"}
         />
       <BlogPost />
       <Hobbies />

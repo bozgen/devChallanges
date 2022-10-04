@@ -5,3 +5,18 @@
     justify-content: space-evenly;
     border-radius: 1.5rem;
 }
+
+@media screen and (max-width: 1350px){
+    .projects{
+        grid-column:1 / span 12;
+        margin: 0 2em;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .projects{
+        display: block;
+        width: calc(95% - 4em);
+        margin: 2em .75em;
+    }
+}

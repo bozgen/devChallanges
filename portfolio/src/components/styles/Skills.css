@@ -1,6 +1,6 @@
 .skills{
     margin-right: 2rem;
-    grid-column: 3 / span 1;
+    grid-column: 3 / span 3;
     grid-row: 3;
 }
 .skills-card{
@@ -12,4 +12,17 @@
     font-weight: 700;
     font-size: 1.5rem;
     color: var(--gray2);
+}
+
+@media screen and (max-width: 1350px){
+    .skills{
+        grid-column: 2 / span 5;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .skills{
+        width: 95%;
+        margin: 2em auto;
+    }
 }

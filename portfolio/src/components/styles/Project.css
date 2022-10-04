@@ -57,3 +57,20 @@
 .project-btn:hover{
     padding: 3.75% 19.75%;
 }
+
+@media screen and (max-width: 1350px){
+    .project-card{
+        width: 23%;
+    }
+    .project-tag{
+        font-size: .6rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .project-card{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 2em;
+    }
+}

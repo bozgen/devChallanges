@@ -9,7 +9,7 @@ const Introduction = memo(() => {
     return(
         <section className="intro">
             <div className="intro-card">
-                <img className="profile-picture"src={logo} alt="profile of the website's owner. He is smiling." />
+                <img className="intro-profile-picture"src={logo} alt="profile of the website's owner. He is smiling." />
                 <div className="intro-info-wrapper">
                     <div className="intro-info">
                         <div className="intro-info-id">

@@ -30,3 +30,17 @@
     font-size: 1rem;
     color: var(--gray3);
 }
+
+@media screen and (max-width: 1350px){
+    .hobbies{
+        grid-column:2 / span 5;
+        margin-top: -14em;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .hobbies{
+        width: 95%;
+        margin: 2em auto;
+    }
+}

@@ -37,3 +37,23 @@
   color: var(--gray3);
   font-size: .8rem;
 }
+
+@media screen and (max-width: 1350px) {
+  .App{
+    grid-gap: 1%;
+    grid-template-columns: repeat(12, 1fr) ;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .App{
+    display: block;
+    padding: 2em;
+  }
+}
+@media screen and (max-width: 350px) {
+  .App{
+    padding: 0;
+    margin: auto;
+  }
+}

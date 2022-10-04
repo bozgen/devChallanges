@@ -58,3 +58,17 @@
 .arrow:active{
     background: var(--gray6);
 }
+
+@media screen and (max-width: 1350px){
+    .projects-controller{
+        grid-column:2 / span 10;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .projects-controller{
+        width: calc(95% - 4em);
+        margin: 2em auto;
+        padding: 2em;
+    }
+}
