@@ -17,6 +17,8 @@ const Header = memo(() => {
     }
     // hides the navigation menu on mobile screen sizes
     const handleClose = () => {
+        if (window.innerWidth > 725) return;
+        
         const close = document.querySelector(".header-close");
         const nav = document.querySelector(".header-nav");
         const ham = document.querySelector(".header-hamburger");
