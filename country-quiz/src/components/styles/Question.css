@@ -15,10 +15,10 @@
     width: 30%;
     left: -40%;
     top: 0;
-    margin-bottom: 15%;
-    padding: 2em;
+    margin-bottom: 18%;
+    padding: 3%;
     background: var(--bg-flag);
-    border-radius: 1em;
+    border-radius: 5%;
 }
 .question-content{
     position: relative;
@@ -81,4 +81,10 @@
     margin-left: 75%;
 
     cursor: pointer;
+}
+@media screen and (max-width: 300px) {
+    .question{
+        padding: 1em 10px;
+        overflow: hidden !important;
+    }
 }

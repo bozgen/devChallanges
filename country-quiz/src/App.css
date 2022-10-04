@@ -38,8 +38,6 @@
   --results-accent: #6FCF97;
   --results-text: #1D355D;
 
-  
-  
   height: 100%;
   background-image: url("./images/background.png");
   background-size: 100%;
@@ -51,6 +49,8 @@
   color: white;
   height: 100%;
   width: fit-content;
+
+  margin: 0;
   position: absolute;
   top: 0;
   left: 50%;
@@ -67,4 +67,16 @@
   margin-bottom: .2em;
   font-weight: 700;
   font-size: 2/5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .App{
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .App{
+    width: 95%;
+  }
 }
