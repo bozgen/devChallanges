@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/devChallenges/portfolio/static/css/main.a50afaf6.css",
-    "main.js": "/devChallenges/portfolio/static/js/main.bb3fea9e.js",
+    "main.js": "/devChallenges/portfolio/static/js/main.b90fb7be.js",
     "static/js/27.80ec1f0b.chunk.js": "/devChallenges/portfolio/static/js/27.80ec1f0b.chunk.js",
     "static/media/Montserrat.ttf": "/devChallenges/portfolio/static/media/Montserrat.3faa3eef13649db02044.ttf",
     "static/media/logo.svg": "/devChallenges/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
@@ -15,6 +15,6 @@
   },
   "entrypoints": [
     "static/css/main.a50afaf6.css",
-    "static/js/main.bb3fea9e.js"
+    "static/js/main.b90fb7be.js"
   ]
 }
