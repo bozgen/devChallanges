@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/devChallenges/country-quiz/static/css/main.357f100a.css",
+    "main.css": "/devChallenges/country-quiz/static/css/main.ae10dfdc.css",
     "main.js": "/devChallenges/country-quiz/static/js/main.04c2a73a.js",
     "static/js/27.07e0730f.chunk.js": "/devChallenges/country-quiz/static/js/27.07e0730f.chunk.js",
     "static/media/Montserrat-VariableFont_wght.ttf": "/devChallenges/country-quiz/static/media/Montserrat-VariableFont_wght.3faa3eef13649db02044.ttf",
@@ -14,7 +14,7 @@
     "index.html": "/devChallenges/country-quiz/index.html"
   },
   "entrypoints": [
-    "static/css/main.357f100a.css",
+    "static/css/main.ae10dfdc.css",
     "static/js/main.04c2a73a.js"
   ]
 }
