@@ -7,6 +7,19 @@
   src: local('Raleway'), url(./fonts/Montserrat-VariableFont_wght.ttf) format('truetype');
 }
 
+:root{
+  --bg-light: #1E213A;
+  --bg-dark: #100E1D;
+  --text-dark: #110E3C;
+  --text-white: #E7E7EB;
+  --text-gray: #A09FB1;
+  --button-gray: #6E707A;
+  --button-blue: #3C47E9;
+  --button-purple: #585676;
+  --accent-yellow: #FFEC65;
+
+  margin: 0;
+}
 
 .App{
   font-family: 'Raleway';
