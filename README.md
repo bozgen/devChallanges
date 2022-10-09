@@ -9,7 +9,10 @@ These challanges are mainly about responsive web development.
 - ## Portfolio Webpage [Code](https://github.com/bozgen/devChallenges/tree/main/portfolio) | [Demo](https://bozgen.github.io/devChallenges/portfolio)
 
     A fully functional portfolio website created using React.
-    
+
+- ## Country Quiz [Code](https://github.com/bozgen/devChallenges/tree/main/country-quiz) | [Demo](https://bozgen.github.io/devChallenges/country-quiz)
+
+    A fun quiz webpage about countries all around the world.
     
 - ## Edie Homepage [Code](https://github.com/bozgen/devChallenges/tree/main/edie-homepage) | [Demo](https://bozgen.github.io/devChallenges/edie-homepage)
 
